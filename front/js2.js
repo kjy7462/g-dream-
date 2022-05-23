@@ -359,6 +359,10 @@ function getContent(data) {
   <div class = "wrap">
   <div class="info">
         <h1 class="title">${data.title}</h1>
+        <img
+          src="resize_어린이집.png"
+          class="infowindow-img"
+        />
         <div class="body">
         <a href="https://map.kakao.com/link/to/${data.title},${data.lat},${data.long}" class="infowindow-btn" target="_blank">길찾기</a>
         <p class="infowindow-address">${data.address}</p>
