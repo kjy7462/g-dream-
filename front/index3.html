@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아동급식카드 가맹점 조회 서비스</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title">아동급식카드 가맹점 조회</h1>
+          <a class="nav-contact" target="_blank" href="https://gdream.gg.go.kr/Login/PointCheck.jsp">잔액조회</a>
+          <button class="nav-contact" id="length-info"></button>
+          <section>
+        <div class="length-list">
+          <button id="1000">1km이내</button>
+          <button id="3000">3km이내</button>
+          <button id="10000">10km이내</button>
+        </div>
+      </section>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <h2 class="category-title">조회하실 카테고리를 선택하세요</h2><button target="_blank" href="">가맹점 추가</button>
+            <div class="category-list">
+              <button class="category-item" id="korea">편의점</button
+              ><button class="category-item" id="china">중식</button
+              ><button class="category-item" id="japan">제과점</button
+              ><button class="category-item" id="america">한식</button
+              ><button class="category-item" id="wheat">반찬</button
+              ><button class="category-item" id="meat">패스트푸드</button
+              ><button class="category-item" id="sushi">양식</button
+              ><button class="category-item" id="etc">분식
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 카테고리 -->
+      <div id="map" class="inner"></div>
+
+      <!-- 카카오지도 -->
+    </main>
+
+ <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd3110546dae90aaca943639c90c9a54&libraries=services"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="axios-script.js"></script>
+  </body>
+</html>
